@@ -36,6 +36,7 @@ public class TestWrapper {
         System.out.println(b1);
         Order o =new Order();
         System.out.println("o调用b:"+o.b);
+        System.out.println("o的地址:"+o);
 
         //包装类转化成基本数据类型
         int i2 =i1.intValue();
@@ -51,5 +52,5 @@ public class TestWrapper {
 
 }
 class Order{
-    Boolean b;
+    Boolean b=false;
 }
