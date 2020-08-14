@@ -30,7 +30,7 @@ public class TestCollection {
         System.out.println(coll1.equals(coll2));
         //12 hashCode()计算哈希值
         System.out.println(coll.hashCode());
-        //13 toArray() :将集合转化为数组
+        //13 toArray() :将集合转化为数组,   Arrays.asList(1,2,"aa");
         Object[] obj = coll.toArray();
         for (int i =0; i < obj.length;i++){
             System.out.println(obj[i]);
@@ -55,7 +55,8 @@ public class TestCollection {
         coll.add(new Date());
         coll.add("BB");
         coll.add(new Person("aa",23));
-        //6.contains(Object obj)包含集合中是否包含指定的obj元素，包含，返回true,反之返回false
+        coll.add("AA");
+        //6.contains(Object obj)集合中是否包含指定的obj元素，包含，返回true,反之返回false
         //判断的依据，根据元素所造类的equals（）方法进行判断
         //明确，如果存入集合中的元素是自定义的队形，要求，自定义类要重写equals方法
         boolean b1 =coll.contains("AA");
